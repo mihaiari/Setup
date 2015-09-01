@@ -19,8 +19,8 @@ sudo chsh -s $(which zsh)
 
 #Create the Clones & Projects folder
 cd ~
-mkdir Projects
-mkdir Clones
+mkdir -p Projects
+mkdir -p Clones
 
 #Install n
 cd ~/Clones/
