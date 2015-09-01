@@ -13,6 +13,10 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 #Set zsh theme to ys
 sed 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/' ~/.zshrc
 
+#Change shell to zsh for iterm
+chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
+
 #Create the Clones & Projects folder
 cd ~
 mkdir Projects
@@ -82,3 +86,7 @@ brew cask sublime-text
 
 #Install docker
 brew cask install dockertoolbox
+
+#The end
+brew cleanup
+source ~/.zshrc
